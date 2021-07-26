@@ -262,6 +262,7 @@ namespace autoRun.UI
             this.Controls.Add(this.gbAuto);
             this.Name = "AutoRunUC";
             this.Size = new System.Drawing.Size(1342, 556);
+            this.Load += new System.EventHandler(this.AutoRunUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gcUrlRun)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvUrlRun)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcRunDetail)).EndInit();

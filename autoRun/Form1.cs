@@ -20,8 +20,6 @@ namespace autoRun
         public Form1()
         {
             InitializeComponent();
-            _urlService = new UrlService();
-            ThreadCommon.ThreadStart(_urlService.GetList_UrlWithActiveStatus());
         }
 
         private void btnAutoRun_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

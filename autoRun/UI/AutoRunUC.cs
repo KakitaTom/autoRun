@@ -30,6 +30,7 @@ namespace autoRun.UI
                 btnAdd, btnEdit, btnDelete, btnStatusChange, gcUrlRun, gcRunDetail
             });
             _urlService = new UrlService();
+            
             DataURL_Load();
             DataDetail_Load();
         }
@@ -127,6 +128,9 @@ namespace autoRun.UI
             DataDetail_Load();
         }
 
-        
+        private void AutoRunUC_Load(object sender, EventArgs e)
+        {
+            ThreadCommon.ThreadStart(_urlService.GetList_UrlWithActiveStatus());
+        }
     }
 }
