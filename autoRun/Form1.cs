@@ -15,8 +15,6 @@ namespace autoRun
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public readonly IUrlService _urlService;
-        
         public Form1()
         {
             InitializeComponent();
